@@ -1,13 +1,35 @@
 :root {
   --primary-color: #ff6c00;
   --secondary-color: #191c26;
-
   --text-primary: #303030;
   --text-secondary: #9da4bd;
+  --text-primary-lighten: #555555;
 }
 
 body {
   font-family: 'OpenSans', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.suptitle-primary,
+.suptitle-secondary {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--text-primary);
+}
+
+.suptitle-secondary {
+  color: #9da4bd99;
 }
 
 h2.section-title {
@@ -21,5 +43,144 @@ h2.section-title.lighten {
   color: #fff;
 }
 
-.suptitle-secondary {
+.hero-description {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+/* Navbar styles here */
+nav.navbar {
+  outline: 2px solid navy;
+}
+
+nav.navbar .btn-box {
+  display: inline-block;
+}
+
+.nav-links {
+  outline: 2px solid skyblue;
+  background-color: olive;
+  display: inline-block;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+a.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+
+a.nav-link:hover,
+a.nav-link:focus {
+  color: #ff6c00;
+}
+
+.section-description {
+}
+
+p.section-description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-primary-lighten);
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--text-primary);
+}
+
+a.social-link:hover,
+a.social-link:focus {
+  color: var(--primary-color);
+}
+
+.primary-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 12px 20px;
+  color: #fff;
+}
+
+.primary-btn.darken {
+  color: var(--text-primary);
+}
+
+/* Price style*/
+
+.price-list {
+  display: inline-block;
+}
+
+.price-item p,
+.price-item span {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-secondary);
+}
+
+/*Why us styles here*/
+
+.number-box p,
+.number-box span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.number-box {
+  width: 170px;
+  height: 133px;
+  background: #f7f7f7;
+  display: inline-block;
+}
+
+.number-box span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--text-primary);
+}
+
+/*Master*/
+
+.master-card p {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--text-primary);
+}
+
+.master-card span {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ff6c00;
+}
+
+/*Footer*/
+
+.footer-contakt {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  counter-reset: var(--text-secondary);
 }
