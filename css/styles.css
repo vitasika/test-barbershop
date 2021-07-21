@@ -82,6 +82,7 @@ a.nav-link:focus {
 }
 
 .section-description {
+  background-color: blueviolet;
 }
 
 p.section-description {
